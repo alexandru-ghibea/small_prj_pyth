@@ -77,7 +77,6 @@ def love_calculator():
     print(collections.Counter(output1))
     love_score1 = sum(collections.Counter(output1).values())
     print("Total Love_score1: ", love_score1)
-
     for letter in combined.lower():
         if letter in word2.lower():
             output2.append(letter)
@@ -86,7 +85,6 @@ def love_calculator():
     print("Total Love_score2: ", love_score2)
     total_love_score: object = eval(f"{love_score1}{love_score2}")
     print(total_love_score)
-
     if total_love_score < 10 or total_love_score > 90:
         print(f"Your score is {total_love_score}, you go together like coke and mentos.")
     elif total_love_score >= 40 <= 50:
