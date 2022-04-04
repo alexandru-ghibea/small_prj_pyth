@@ -1,4 +1,3 @@
-
 """
 Program that tests the compatibility between two people.
 
@@ -59,6 +58,7 @@ Example Output 1
 
 Your score is 42, you are alright together.
 """
+
 import collections
 
 
@@ -66,14 +66,15 @@ def love_calculator():
     print("Welcome to the love calculator ")
     name1 = input("What is your name?: ")
     name2 = input("what is their name? ")
-    word1 = "Love"
-    word2 = "True"
+    word1 = "True"
+    word2 = "Love"
     output1 = []
     output2 = []
-    combined = name1+name2
+    combined = name1 + name2
     for letter in combined.lower():
         if letter in word1.lower():
             output1.append(letter)
+    print(output1)
     print(collections.Counter(output1))
     love_score1 = sum(collections.Counter(output1).values())
     print("Total Love_score1: ", love_score1)
