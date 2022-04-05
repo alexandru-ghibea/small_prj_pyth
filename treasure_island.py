@@ -19,6 +19,7 @@ print('\n'
       '____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____\n'
       '/______/______/______/______/______/______/______/______/______/______/_____ /\n'
       '*******************************************************************************\n')
+
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
 decision1 = input("Choose where you would like to move: Left or Right ?").lower()
