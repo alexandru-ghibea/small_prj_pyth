@@ -29,7 +29,7 @@ while True:
             print("User wins")
         else:
             computer = scissors
-            print("Tie Game")
+            print("TIE GAME")
     else:
-        print("Please select: Rock,Paper,Scissors")
+        print("Please select: Rock,Paper or Scissors")
         user_input = input("What do you choose? Rock, Paper or scissors.").lower()
