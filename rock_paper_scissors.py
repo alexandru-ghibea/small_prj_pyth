@@ -1,33 +1,5 @@
 import random
 
-rock = '''
-    _______
----'   ____)
-      (_____)
-      (_____)
-      (____)
----.__(___)
-'''
-
-paper = '''
-    _______
----'   ____)____
-          ______)
-          _______)
-         _______)
----.__________)
-'''
-
-scissors = '''
-    _______
----'   ____)____
-          ______)
-       __________)
-      (____)
----.__(___)
-'''
-
-game_images = [rock, paper, scissors]
 while True:
     computer = random.choice(game_images)
     user_input = input("What do you choose? Rock, Paper or scissors.").lower()
