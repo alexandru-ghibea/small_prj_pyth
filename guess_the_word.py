@@ -22,7 +22,7 @@ while game_on:
     no_of_guesses -= 1
     print("Number of guesses remaining:", no_of_guesses)
     print(display)
-    if no_of_guesses == 0:
+    if no_of_guesses < 0:
         print("You loose.Word was:", chosen_word)
         game_on = False
     if "".join(display) == chosen_word:
