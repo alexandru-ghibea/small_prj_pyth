@@ -16,8 +16,8 @@ number_of_letters = int(input("How many letters would you like in your password 
 number_of_symbols = int(input("How many symbols would you like?: "))
 number_of_numbers = int(input("How many numbers would you like?: "))
 
-letters_to_use = ''.join(random.choice(string.ascii_letters) for x in range(number_of_letters))
-numbers_to_use = ''.join(random.choice(string.digits) for x in range(number_of_numbers))
+letters_to_use = ''.join(random.choice(all_letters) for x in range(number_of_letters))
+numbers_to_use = ''.join(random.choice(numbers) for x in range(number_of_numbers))
 symbols_to_use = ''.join(random.choice(symbols) for x in range(number_of_symbols))
 password = (letters_to_use + numbers_to_use + symbols_to_use)
 print(f"Here is your password 1 version :{password}")
