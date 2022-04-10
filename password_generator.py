@@ -44,12 +44,12 @@ while True:
 letters_to_use = ''.join(random.choice(all_letters) for x in range(number_of_letters))
 numbers_to_use = ''.join(random.choice(numbers) for x in range(number_of_numbers))
 symbols_to_use = ''.join(random.choice(symbols) for x in range(number_of_symbols))
-password = (letters_to_use + numbers_to_use + symbols_to_use)
-print(f"Here is your password 1 version :{password}")
+password_v1 = (letters_to_use + numbers_to_use + symbols_to_use)
+print(f"Here is your password 1 version :{password_v1}")
 
 """
 For added complexity to the password you can shuffle the password.
 """
 
-password2 = "".join(random.sample(password,len(password)))
-print(f"Here is your password 2 version :{password2}")
+password_v2 = "".join(random.sample(password_v1,len(password_v1)))
+print(f"Here is your password 2 version :{password_v2}")
