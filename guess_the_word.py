@@ -17,7 +17,6 @@ while game_on:
             display[index] = letter2
         index += 1
     no_of_guesses -= 1
-
     print(display)
     if no_of_guesses < 0:
         print("You loose.Word was:", chosen_word)
