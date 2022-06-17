@@ -1,6 +1,5 @@
 """
 Input any password and check if hacked
-#  Code along - Udemy Course Zero to Mastery with Andrei Neagoe
 """
 import requests
 import hashlib
